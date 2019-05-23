@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationShare">
+
+    <TextView
+        android:id="@+id/txtVwPet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Pet Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtLong" />
+
+    <TextView
+        android:id="@+id/petlocation"
+        android:layout_width="182dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVwPet" />
+
+    <TextView
+        android:id="@+id/Strlong"
+        android:layout_width="124dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="36dp"
+        android:text="Longtitude...."
+        app:layout_constraintStart_toEndOf="@+id/TxtLong"
+        app:layout_constraintTop_toBottomOf="@+id/StrLat" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="164dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="37dp"
+        android:onClick="fnSend"
+        android:text="Send SMS "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TxtLong"
+        android:layout_width="82dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="32dp"
+        android:text=" Longtitude :"
+        app:layout_constraintTop_toBottomOf="@+id/TxtLat"
+        tools:layout_editor_absoluteX="85dp" />
+
+    <TextView
+        android:id="@+id/TxtLat"
+        android:layout_width="75dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="104dp"
+        android:text="Latitude  :"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="85dp" />
+
+    <TextView
+        android:id="@+id/StrLat"
+        android:layout_width="113dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="104dp"
+        android:text="Latitude...."
+        app:layout_constraintStart_toEndOf="@+id/TxtLat"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
